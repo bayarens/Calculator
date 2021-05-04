@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    justify-content: start;
+    color:black;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.collectorsprints.com/_images/babar/maths-400.jpg);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+}
+
+#calculator-frame{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgba(206, 112, 49, 0.904);
+    max-height: 320px;
+    transition: all 0.5s; 
+    overflow: hidden;
+    max-width: 400px;
+    padding: 8px;
+    box-shadow: 0 0 10px gray;
+}    
+#display-box > input, #display-box-holder > input{
+    width: 100%;
+    margin: 0;
+    padding: 0px 5px;
+    border: none;
+    height: 44px;
+    box-sizing: border-box;
+    background: rgba(79, 77, 184, 0.904);
+    filter: drop-shadow(0 0 10px gray);
+    font-family: 'Bangers', cursive;
+    font-size: 125%;
+    letter-spacing: 5px;
+    opacity: .8;
+    text-shadow: 0 0 1px rgb(143, 219, 66);
+    overflow: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.column{
+display: flex;
+flex-direction: column;
+}
+
+#calculator-frame button{
+    height: 44px;
+    width: 80px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#calculator-frame button:hover, #calculator-frame button.active{
+    opacity: 1;
+    background-color: red;
+    color:white;
+}
+
+#calculator-frame #equal:hover{
+background-color: blue;
+color: gold;
+}
+
+section.column{
+    align-items: flex-start;
+}
+
+#calculator-frame #equal{
+    height: 88px;
+} 
+
+#calculator-frame #zero{
+    width: 160px;
+}
+
+/*.row.lastRow{
+    margin-top: -44px;
+}*/ 
+.row:last-child{
+    margin-top: -44px;
+}
+
+.column-main-container{
+    transition:all 1s;
+    overflow: hidden;
+}
+
+#display-box-holder.hide{
+    max-width: 0;
+    padding: 0;
+}
+
+#calculator-frame.hide {
+    border: 0;
+    max-width: 0;
+    padding: 0;
+}
+
+#display-box-holder, #display-box-holder > input{
+    width: 100%;
+}
