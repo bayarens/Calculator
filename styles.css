@@ -80,9 +80,6 @@ section.column{
     width: 160px;
 }
 
-/*.row.lastRow{
-    margin-top: -44px;
-}*/ 
 .row:last-child{
     margin-top: -44px;
 }
